@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+   background-color: var(--light-blue);
+}
 
 #navbar {
     display: flex;
@@ -62,7 +65,7 @@ div.spacer {
 }
 
 #welcome-section {
-    background-color: var(--beige);
+    background-color: var(--gold);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -76,4 +79,37 @@ h1 {
 h2 {
     font-family: 'Poiret One', cursive;
     color: var(--light-blue);
+    
 }
+h3{
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    margin-top: 20px;
+    color: var(--gold);
+    text-shadow: 2px 2px black;
+}
+.projects {
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+    
+}
+.project-tile > img:hover {
+    cursor: pointer;
+}
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--gold);
+    border-radius: 10%;
+}
+@media screen and (max-width: 600px) {
+    nav>ul>li>a {
+      float: none;
+      width: 100%;
+    }
+  }
